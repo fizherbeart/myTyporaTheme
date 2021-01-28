@@ -1,0 +1,65 @@
+blockquote:before {
+display: block;
+position: absolute;
+content: '';
+width: 4px;
+left: 0;
+top: 0;
+height: 100%;
+background-color: #471077;
+border-radius: 2px;
+}
+
+紫色：#471077
+黄色：#F4B82B
+
+
+display: inline-block;
+position: absolute;
+content: '';
+width: 5px;
+left: 0;
+top: 0;
+height: 120%;
+background-color: rgba(0, 255, 255,0.3);
+border-radius: 2px;
+
+
+
+.outline-item-open>.outline-item>.outline-expander:before {
+/* content: "\f123"; */
+z-index: 40;
+}
+
+.outline-expander:hover:before {
+/* content: "\f123"; */
+z-index: 40;
+}
+
+
+.outline-expander:before {
+display: block;
+position: absolute;
+z-index: 60;
+content: '';
+width: 4px;
+left: 0.5rem;
+top: -2px;
+height: 115%;
+background-color: rgb(192,142,226);
+border-radius: 2px 0px 0px 2px;
+}
+
+
+.outline-expander::after {
+display: block;
+position: absolute;
+z-index: 50;
+content: '';
+width: 4px;
+left: 0.5rem;
+top: -2px;
+height: 115%;
+background-color: #ffa4a4;
+border-radius: 2px 0px 0px 2px;
+}
